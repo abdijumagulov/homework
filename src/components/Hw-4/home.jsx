@@ -3,24 +3,24 @@ import "./css/home.css"
 
 
 const Home = () => {
-    const [title, setTitle] = useState('')
-    const [namber, setNamber] = useState('')
-    const [age, setAge] = useState('')
+    const [input, setInput] = useState({
+		title: "",
+		namber: "",
+		age: ""
+	})
 
     const titleChangeHandler = (event) => {
-		setTitle(event.target.value)
+		setInput({title: event.target.value})
 	}
     const namberChangeHandler = (event) => {
-		setNamber(event.target.value)
+		setInput({namber: event.target.value})
 	}
     const ageChangeHandler = (event) => {
-		setAge(event.target.value)
+		setInput({age: event.target.value})
 	}
     const submitHandler = (event) => {
         event.preventDefault()
-        console.log(title);
-        console.log(namber);
-        console.log(age);
+        console.log(input);
 	}
 
     return (
@@ -34,7 +34,6 @@ const Home = () => {
 						type='text'
 						placeholder='Title'
                         onChange={titleChangeHandler}
-						value={title}
 					/>
 				</div>
 			</div>
@@ -46,7 +45,6 @@ const Home = () => {
 						type='number'
 						placeholder='namber'
                         onChange={namberChangeHandler}
-						value={namber}
 					/>
 				</div>
 			</div>
@@ -58,7 +56,6 @@ const Home = () => {
 						type='number'
 						placeholder='age'
                         onChange={ageChangeHandler}
-						value={age}
 					/>
 				</div>
 			</div>
