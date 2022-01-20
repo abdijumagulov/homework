@@ -1,16 +1,12 @@
 import React from 'react';
+import "./css/item.css"
 
-const Item = () => {
+const Item = (props) => {
     return (
-        <div>
-            <div className='new-expense__control'>
-					<label>Title</label>
-					<input
-						name='title'
-						type='text'
-						placeholder='Title'
-					/>
-			</div>
+        <div className='containerItem'>
+            <p className='name'>{props.name}</p>
+            <p className='text'>{props.text}</p>
+            <p className='feel'>{props.feel}</p>
         </div>
     );
 };

@@ -24,36 +24,30 @@ const Form = (props) => {
             text: text,
             feel: feel
         }
+        
         props.onGetForm(inputData)
 	}
 
     return (
         <div className='body'>
             <form className='new-expense__controls' onSubmit={submitHandler}>
-            <div>
-				<div className='new-expense__control'>
-					<label>Общее</label>
-					<input
+                
+                    <input
 						name='name'
 						type='Название'
 						placeholder='Название вашего плана'
                         onChange={nameChangeHandler}
+                        className='nameInput'
 					/>
-				</div>
-			</div>
-            <div>
-				<div className='new-expense__control'>
-					<label>Сегодня буду делать</label>
 					<textarea
 						name='photo'
 						type='text'
-						placeholder='your photo'
+						placeholder='Что вы будете делать'
                         onChange={textChangeHandler}
+                        className='textarea'
 					/>
-				</div>
-			</div>
             
-            <select className='select' placeholder='' onChange={feelChangeHandler}>
+            <select className='select'   onChange={feelChangeHandler}>
                 <option className='option'>Крутое</option>
                 <option className='option'>Класное</option>
                 <option className='option'>Хорошое</option>
@@ -62,7 +56,7 @@ const Form = (props) => {
                 <option className='option'>Плохое</option>
                 <option className='option'>Ужасное</option>
             </select>
-            <button className='btnSab' type='submit'>Регистарция</button>
+            <button className='btnSab' type='submit'>+</button>
             </form>
         </div>
     );
