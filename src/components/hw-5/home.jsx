@@ -10,17 +10,19 @@ const Home = () => {
     const getFormHandler = (Data) => {
         const Dat = {
 			...Data,
-			id: Math.random().toString()
+			id: Math.random(),
 		}
         setArr((prevState) => {
             return [...prevState,Dat]
+          
         })
+         
     }
 
     return (
         <div className='body'>
             <Form onGetForm={getFormHandler}/>
-            <List arr={arr}/>
+            <List arr={arr} />
         </div>
     );
 };

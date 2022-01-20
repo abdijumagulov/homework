@@ -9,6 +9,7 @@ const List = (props) => {
 						name={element.name}
                         text={element.text}
                         feel={element.feel}
+                        arr={props.arr}
 					/>
 				)
 			})}

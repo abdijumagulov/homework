@@ -5,53 +5,62 @@
   background: rgb(255, 255, 255);
 }
 .new-expense__controls {
-  padding: 50px;
+  margin-left: 700px;
+  padding: 30px;
   border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 0, 0, 0.288);
 
-    background: rgba(197, 195, 195, 0.651);
-    display: flex;
-    width: 700px;
-    height: 200px;
-    margin: 20px auto;
+    /* background: rgba(197, 195, 195, 0.651); */
+    width: 350px;
+    height: 450px;
   }
   .nameInput {
     font-family: 'Mochiy Pop P One', sans-serif;
-    margin-top: -20px;
-    margin-left: -10px;
-    width: 200px;
-    height: 30px;
+    width: 250px;
+    height: 60px;
     border-radius: 10px;
+    margin-bottom: 30px;
+    border: none;
+    padding: 10px;
   }
   .textarea{
+    border: none;
     font-family: 'Mochiy Pop P One', sans-serif;
-    padding: 30px;
-    margin-left: -210px;
-    margin-top: 30px;
-    width: 270px;
-    height: 130px;
+    width: 340px;
+    height: 460px;
     border-radius: 20px;
     font-size: 20px;
+    padding: 15px;
   }
 
   .select{
+    padding: 10px;
     font-family: 'Mochiy Pop P One', sans-serif;
-    margin: 30px 40px;
     width: 250px;
-    height: 30px;
+    height: 50px;
     border-radius: 8px;
     font-size: 20px;
     transition: 0.5s;
+    border: none;
+    margin-top:20px;
   }
 
   .option{
     font-family: 'Mochiy Pop P One', sans-serif;
-    transition: 0.5s;
+    transition: 1.5s;
   }
 
   .btnSab{
-    font-family: 'Mochiy Pop P One', sans-serif;
     margin-top: 30px;
-    width: 120px;
-    font-size: 100px;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    height: 55px;
+    width: 140px;
+    font-size: 20px;
     color: rgba(0, 0, 0, 0.486);
+    border: none;
+    background: rgba(0, 0, 0, 0.144);
+    border-radius: 5px;
   }

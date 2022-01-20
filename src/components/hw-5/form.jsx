@@ -24,7 +24,7 @@ const Form = (props) => {
             text: text,
             feel: feel
         }
-        
+        console.log(inputData);
         props.onGetForm(inputData)
 	}
 
@@ -48,13 +48,9 @@ const Form = (props) => {
 					/>
             
             <select className='select'   onChange={feelChangeHandler}>
-                <option className='option'>Крутое</option>
-                <option className='option'>Класное</option>
-                <option className='option'>Хорошое</option>
-                <option className='option'>Нормальное</option>
-                <option className='option'>Не очень</option>
-                <option className='option'>Плохое</option>
-                <option className='option'>Ужасное</option>
+                <option className='option'>Неважно</option>
+                <option className='option'>Обязательно</option>
+                <option className='option'>Срочно</option>
             </select>
             <button className='btnSab' type='submit'>+</button>
             </form>
